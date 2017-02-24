@@ -125,27 +125,35 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.local.config" />
-    <None Include="App.sit.config" />
-    <None Include="App.pro.config">
+    <Content Include="Fanex.NG2.ServiceBroker.exe.local.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.NG2.ServiceBroker.exe.sit.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.NG2.ServiceBroker.exe.pro.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="App.uat.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.NG2.ServiceBroker.exe.uat.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="App.config" />
-    <None Include="ConnectionString.local.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ConnectionString.pro.config">
+    </Content>
+    <Content Include="Fanex.NG2.ServiceBroker.exe.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ConnectionString.uat.config">
+    </Content>
+    <Content Include="ConnectionString.local.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ConnectionString.sit.config">
+    </Content>
+    <Content Include="ConnectionString.pro.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
+    <Content Include="ConnectionString.uat.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ConnectionString.sit.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\Fanex.Module.NG2.1.0.0-NAP-091\Fanex.Module.NG2.1.0.0-NAP-091.nupkg" />
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.config" />
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.mnl.config" />
@@ -155,29 +163,29 @@
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\LogsConfiguration.config" />
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\ONEbook.NG2.API.config" />
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\ONEbook.NG2.API.1.0.0.0-NAP-07.nupkg" />
-    <None Include="LogsConfiguration.config">
+    <Content Include="LogsConfiguration.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ONEbook.NG2.API.local.config">
+    </Content>
+    <Content Include="ONEbook.NG2.API.local.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ONEbook.NG2.API.sit.config">
+    </Content>
+    <Content Include="ONEbook.NG2.API.sit.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ONEbook.NG2.API.pro.config">
+    </Content>
+    <Content Include="ONEbook.NG2.API.pro.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ONEbook.NG2.API.uat.config">
+    </Content>
+    <Content Include="ONEbook.NG2.API.uat.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ONEbook.NG2.API.config">
+    </Content>
+    <Content Include="ONEbook.NG2.API.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
-    </None>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -194,9 +202,9 @@
     <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\vi-VN\ONEbook.NG2.API.resources.dll" />
     <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\zh-CN\ONEbook.NG2.API.resources.dll" />
     <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\zh-TW\ONEbook.NG2.API.resources.dll" />
-    <None Include="ConnectionString.config">
+    <Content Include="ConnectionString.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
