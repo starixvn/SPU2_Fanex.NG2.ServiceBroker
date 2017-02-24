@@ -125,6 +125,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.local.config" />
     <None Include="App.sit.config" />
     <None Include="App.pro.config">
       <SubType>Designer</SubType>
@@ -133,6 +134,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="App.config" />
+    <None Include="ConnectionString.local.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ConnectionString.pro.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -152,6 +156,10 @@
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\ONEbook.NG2.API.config" />
     <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\ONEbook.NG2.API.1.0.0.0-NAP-07.nupkg" />
     <None Include="LogsConfiguration.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ONEbook.NG2.API.local.config">
+      <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="ONEbook.NG2.API.sit.config">
