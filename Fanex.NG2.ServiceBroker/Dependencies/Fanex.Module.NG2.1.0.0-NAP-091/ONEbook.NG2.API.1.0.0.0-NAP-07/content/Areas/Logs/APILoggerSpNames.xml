@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Functions>
-	<Function Name="API Logger">
-		<Setting Key="WriteLog_UserLog_ExternalAPI_Ins" SpName="WriteLog_UserLog_ExternalAPI_Ins" DbName="DBLOG.bodb_CustomerLog.bodbAdminNet" Plain="0" />
-		<Setting Key="WriteLog_UserLog_ExternalAPI_UpdResponse" SpName="WriteLog_UserLog_ExternalAPI_UpdResponse" DbName="DBLOG.bodb_CustomerLog.bodbAdminNet" Plain="0" />		
-	</Function>
-</Functions>

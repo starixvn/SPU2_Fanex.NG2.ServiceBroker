@@ -36,8 +36,20 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Couchbase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=81137140da4e57ef, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Caching.1.0.404.97\lib\net40\Couchbase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EasyNetQ, Version=0.53.3.414, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EasyNetQ.0.53.3.414\lib\net45\EasyNetQ.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Enyim.Caching, Version=2.12.0.0, Culture=neutral, PublicKeyToken=81137140da4e57ef, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Caching.1.0.404.97\lib\net40\Enyim.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Fanex.Caching, Version=1.0.404.95, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Caching.1.0.404.97\lib\net40\Fanex.Caching.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Fanex.Common, Version=1.0.404.97, Culture=neutral, processorArchitecture=MSIL">
@@ -56,8 +68,13 @@
       <HintPath>..\packages\Fanex.Module.Logs.2.0.0.2\lib\net40\Fanex.Module.Logs.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Fanex.Module.NG2">
-      <HintPath>Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\Fanex.Module.NG2.1.0.0-NAP-091\lib\net40\Fanex.Module.NG2.dll</HintPath>
+    <Reference Include="Fanex.Module.NG2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Module.NG2.NAP.1.0.0.9\lib\net40\Fanex.Module.NG2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Caching.5.0.414.0\lib\net40\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\EnterpriseLibrary.Common.5.0.414.0\lib\net40\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
@@ -83,11 +100,12 @@
       <HintPath>..\packages\EnterpriseLibrary.Unity.5.0.414.0\lib\net40\Microsoft.Practices.Unity.Interception.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ONEbook.NG2.API">
-      <HintPath>Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\ONEbook.NG2.API.dll</HintPath>
+    <Reference Include="ONEbook.NG2.API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ONEbook.NG2.API.NAP.1.0.0.1\lib\net40\ONEbook.NG2.API.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ONEbook.UM.ThirdParty, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ONEbook.UM.ThirdParty.1.0.0.0-beta2\lib\net40\ONEbook.UM.ThirdParty.dll</HintPath>
+      <HintPath>..\packages\ONEbook.UM.ThirdParty.1.0.0.0\lib\net40\ONEbook.UM.ThirdParty.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RabbitMQ.Client, Version=3.5.6.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
@@ -125,6 +143,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Logs\APILoggerSpNames.xml" />
     <Content Include="Fanex.NG2.ServiceBroker.exe.local.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -154,15 +173,6 @@
     <Content Include="ConnectionString.sit.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\Fanex.Module.NG2.1.0.0-NAP-091\Fanex.Module.NG2.1.0.0-NAP-091.nupkg" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.mnl.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.pro.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.sit.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerConnectionStrings.uat.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\LogsConfiguration.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\ONEbook.NG2.API.config" />
-    <None Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\ONEbook.NG2.API.1.0.0.0-NAP-07.nupkg" />
     <Content Include="LogsConfiguration.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -186,22 +196,20 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <None Include="app.config" />
+    <None Include="Areas\Logs\APILoggerConnectionStrings.config" />
+    <None Include="Areas\Logs\APILoggerConnectionStrings.mnl.config" />
+    <None Include="Areas\Logs\APILoggerConnectionStrings.pro.config" />
+    <None Include="Areas\Logs\APILoggerConnectionStrings.sit.config" />
+    <None Include="Areas\Logs\APILoggerConnectionStrings.uat.config" />
+    <None Include="Areas\Logs\LogsConfiguration.config" />
+    <None Include="Areas\ONEbook.NG2.API.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="APILoggerSpNames.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\Fanex.Module.NG2.1.0.0-NAP-091\lib\net40\Fanex.Module.NG2.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\content\Areas\Logs\APILoggerSpNames.xml" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\ja-JP\ONEbook.NG2.API.resources.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\ko-KR\ONEbook.NG2.API.resources.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\ONEbook.NG2.API.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\ONEbook.NG2.API.XML" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\th-TH\ONEbook.NG2.API.resources.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\vi-VN\ONEbook.NG2.API.resources.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\zh-CN\ONEbook.NG2.API.resources.dll" />
-    <Content Include="Dependencies\Fanex.Module.NG2.1.0.0-NAP-091\ONEbook.NG2.API.1.0.0.0-NAP-07\lib\net40\zh-TW\ONEbook.NG2.API.resources.dll" />
     <Content Include="ConnectionString.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
