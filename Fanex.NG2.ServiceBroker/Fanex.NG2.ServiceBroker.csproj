@@ -60,6 +60,10 @@
       <HintPath>..\packages\Fanex.Data.0.5.404.59\lib\net40\Fanex.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Fanex.Data.DbSettingProviderExtension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.DbSettingProviderExtension.1.0.0.1\lib\net40\Fanex.Data.DbSettingProviderExtension.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Fanex.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Logging.1.0.0.0\lib\net40\Fanex.Logging.dll</HintPath>
       <Private>True</Private>
@@ -143,7 +147,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Logs\APILoggerSpNames.xml" />
     <Content Include="Fanex.NG2.ServiceBroker.exe.local.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -197,13 +200,6 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="app.config" />
-    <None Include="Areas\Logs\APILoggerConnectionStrings.config" />
-    <None Include="Areas\Logs\APILoggerConnectionStrings.mnl.config" />
-    <None Include="Areas\Logs\APILoggerConnectionStrings.pro.config" />
-    <None Include="Areas\Logs\APILoggerConnectionStrings.sit.config" />
-    <None Include="Areas\Logs\APILoggerConnectionStrings.uat.config" />
-    <None Include="Areas\Logs\LogsConfiguration.config" />
-    <None Include="Areas\ONEbook.NG2.API.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
