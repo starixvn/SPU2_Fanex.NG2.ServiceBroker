@@ -18,6 +18,8 @@ Thumbs.db
 *.ilk
 *.log
 *.orig
+*.sh
+*.user
 *Settings.StyleCop
 **/[Bb]in
 */obj/*

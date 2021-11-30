@@ -1,4 +1,6 @@
 ﻿using EasyNetQ;
+using Fanex.Logging.Extensions.Database;
+using Fanex.NG2.ServiceBroker.Logging;
 using ONEbook.NG2.API.Configuration;
 using ONEbook.NG2.API.DTO.CreateAccount;
 using System;
@@ -14,10 +16,11 @@ namespace Fanex.NG2.ServiceBroker
         /// </summary>
         static void Main(string[] args)
         {
+            LoggingConfig.Init(DatabaseInfoGetters.GetDbExceptionInfo);
             ServiceBase[] servicesToRun = new ServiceBase[]
-           {
+            {
                 new NG2ServiceBroker()
-           };
+            };
 
             if (Environment.UserInteractive)
             {
