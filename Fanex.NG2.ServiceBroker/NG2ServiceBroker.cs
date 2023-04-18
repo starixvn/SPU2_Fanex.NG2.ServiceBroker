@@ -88,6 +88,7 @@ namespace Fanex.NG2.ServiceBroker
                     Console.WriteLine("IsSuccess = " + retryResult.ToString());
                     Console.WriteLine("Failed.");
                     Console.ResetColor();
+                    Fanex.Logging.Logger.Log.Info(string.Format("Retry({0}) for customers: {1}. Result: {2}", request.RetryCount, customersList, retryResult ? "Success" : "Fail"));
                     request.RetryCount++;
                     _bus.Publish<RetrySyncCustomerMessage>(request);
                 }
@@ -96,6 +97,7 @@ namespace Fanex.NG2.ServiceBroker
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(string.Format("Retry({0}) for customers: {1}", request.RetryCount, customersList));
                     Console.WriteLine("Successfully.");
+                    Fanex.Logging.Logger.Log.Info(string.Format("Retry({0}) for customers: {1}. Result: {2}", request.RetryCount, customersList, retryResult ? "Success" : "Fail"));
                     Console.ResetColor();
                 }
             }
