@@ -3,6 +3,7 @@ using Fanex.Data.Configuration;
 using Fanex.Module.NG2.Services;
 using Fanex.NG2.ServiceBroker.Logging;
 using Fanex.NG2.ServiceBroker.Models;
+using Newtonsoft.Json;
 using ONEbook.NG2.API.DTO.CreateAccount;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,7 @@ namespace Fanex.NG2.ServiceBroker
 
         private void RetrySyncCustomer(RetrySyncCustomerMessage request)
         {
+            Fanex.Logging.Logger.Log.Info(string.Format("Retry sync. Request: {0}", JsonConvert.SerializeObject(request)));
             bool retryResult = false;
             var customerArray = new List<long>();
             foreach (var item in request.Request.Call.AccountArray)
